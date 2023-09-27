@@ -15,9 +15,7 @@ app.use(express.json())
 mongoose.connect('mongodb+srv://crudapp:crudapp@crud1.el02x0i.mongodb.net/?retryWrites=true&w=majority');
 
 app.get('/', (req, res) => {
-    UserModel.find()
-    .then(users => res.json(users))
-    .catch(err => res.json(err))
+    res.send("hello")
 })
 
 app.post('/create', (req, res) => {
