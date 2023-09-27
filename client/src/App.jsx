@@ -15,7 +15,7 @@ function App() {
   useEffect(()=> {
     const fetchData = async() => {
         try {
-            const response = await axios.get('https://mern-crud-app-blzt.vercel.app');
+            const response = await axios.get('https://mern-crud-api-delta.vercel.app');
             dispatch(getUser(response.data));
         } catch(err) {
             console.log(err)
